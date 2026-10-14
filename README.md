@@ -1,6 +1,7 @@
 # Vidyora AI — An Agentic AI-Powered Personalized Learning Platform
 
 > **"Learn in Your Language. Learn at Your Pace."**  
+> **🌐 Live Website:** [Vidyora AI — Agentic AI Personalized Learning Platform | NEXTECH 2.0](https://vidyora-ai.vercel.app/)  
 > **Hackathon:** NEXTECH 2.0 | NMIET | NIRMIT 2026  
 > **Team Name:** AgniX  
 > **Team Members:**  
@@ -14,6 +15,8 @@
 
 ## 1. Project Overview & Identity
 **Vidyora AI** is India’s first agentic AI-powered, bilingual (Odia + English), offline-first personalized education platform built specifically for school students in rural and semi-urban communities. It bridges critical language barriers, provides round-the-clock academic tutoring, detects micro-topic weaknesses through deterministic server scoring, and enables continuous learning even with zero internet connectivity.
+
+- **🌐 Live Production Deployment:** [Vidyora AI — Agentic AI Personalized Learning Platform | NEXTECH 2.0](https://vidyora-ai.vercel.app/)
 
 ---
 
