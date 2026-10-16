@@ -109,7 +109,7 @@ vidyora-ai/
 │   │   ├── i18n/                     # en.json, or.json (Authentic Unicode Odia translations)
 │   │   ├── pages/
 │   │   │   ├── LandingPage.jsx       # 3D Hero, preview, features, how it works
-│   │   │   ├── LoginPage.jsx         # Sign in with One-Click Demo Student fill
+│   │   │   ├── LoginPage.jsx         # Sign in with student account credentials
 │   │   │   ├── RegisterPage.jsx      # Student registration (grade, school, parent details)
 │   │   │   ├── DashboardPage.jsx     # Global search, streak, weak topics, subjects, tasks
 │   │   │   ├── AiTutorPage.jsx       # Agentic AI chat with reasoning pipeline & TTS
@@ -213,17 +213,7 @@ vidyora-ai/
 
 ---
 
-## 10. Demo Student Credentials
-For instant demonstration, use the preloaded account or click **"One-Click Login"** on `/login`:
-- **Email:** `demo.student@vidyora.ai`
-- **Password:** `vidyora123`
-- **Class:** Class 8 (ଅଷ୍ଟମ ଶ୍ରେଣୀ)
-- **School:** Govt. High School, Balasore
-- **Preferred Language:** Odia (`or`)
-
----
-
-## 11. Verified End-to-End User Journeys
+## 10. Verified End-to-End User Journeys
 The following flows were verified and tested in the live environment:
 - ✅ **Bilingual Odia & English Switcher:** Real-time UI and content translation using Unicode Odia script.
 - ✅ **Global Topic Search Bar:** Debounced search against `/api/lessons/search` with auto-suggest dropdown.
@@ -235,5 +225,5 @@ The following flows were verified and tested in the live environment:
 
 ---
 
-## 12. License & Acknowledgements
+## 11. License & Acknowledgements
 Built with precision for rural and semi-urban student empowerment.

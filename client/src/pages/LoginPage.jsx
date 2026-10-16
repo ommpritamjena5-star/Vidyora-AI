@@ -10,7 +10,6 @@ import {
   Mail,
   AlertCircle,
   ArrowRight,
-  UserCheck,
   ChevronLeft,
   Home,
   KeyRound,
@@ -42,7 +41,7 @@ export default function LoginPage() {
   const [resetLoading, setResetLoading] = useState(false);
   const [resendCooldown, setResendCooldown] = useState(0);
 
-  const { login, quickDemoLogin, setAuthSession } = useAuth();
+  const { login, setAuthSession } = useAuth();
   const { lang, t } = useLanguage();
   const navigate = useNavigate();
 
@@ -83,18 +82,6 @@ export default function LoginPage() {
     }
   };
 
-  const handleDemoLogin = async () => {
-    setEmail('demo.student@vidyora.ai');
-    setPassword('vidyora123');
-    setLoading(true);
-    const res = await quickDemoLogin();
-    setLoading(false);
-    if (res.success) {
-      navigate('/dashboard');
-    } else {
-      setError(res.message);
-    }
-  };
 
   const handleStartForgotPassword = () => {
     setResetEmail(email || '');
@@ -268,23 +255,6 @@ export default function LoginPage() {
                 </p>
               </div>
 
-              {/* Quick Demo Student Fill Button */}
-              <div className="p-3.5 rounded-2xl bg-brand-teal/10 border border-brand-teal/30 flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <UserCheck className="w-5 h-5 text-brand-teal" />
-                  <div>
-                    <div className="text-xs font-bold text-brand-navy">Hackathon Reviewer?</div>
-                    <div className="text-[11px] text-slate-500">Auto-fill demo student profile</div>
-                  </div>
-                </div>
-                <button
-                  type="button"
-                  onClick={handleDemoLogin}
-                  className="px-3 py-1.5 rounded-xl bg-brand-navy text-white text-xs font-extrabold hover:bg-brand-navyLight shadow-xs cursor-pointer"
-                >
-                  One-Click Login
-                </button>
-              </div>
 
               {error && (
                 <div className="p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs font-semibold flex items-center gap-2">
