@@ -92,50 +92,9 @@ exports.login = async (req, res) => {
       return res.status(400).json({ message: 'Please provide both email and password.' });
     }
 
-    // Demo student fallback bypass for quick hackathon review
-    if (email === 'demo.student@vidyora.ai' && password === 'vidyora123') {
-      let demoUser = await User.findOne({ email });
-      if (!demoUser) {
-        const salt = await bcrypt.genSalt(10);
-        const hashedPassword = await bcrypt.hash('vidyora123', salt);
-        demoUser = new User({
-          name: 'Omm Pritam (Demo Student)',
-          email: 'demo.student@vidyora.ai',
-          password: hashedPassword,
-          classLevel: 'Class 8',
-          schoolName: 'Govt. High School, Balasore',
-          parentName: 'Ramesh Jena',
-          parentEmail: 'ramesh.jena.parent@example.com',
-          preferredLanguage: 'or',
-        });
-        await demoUser.save();
-
-        const progress = new LearningProgress({
-          user: demoUser._id,
-          streakDays: 4,
-          activeMinutes: 145,
-          averageScore: 78,
-          totalQuizzesTaken: 5,
-        });
-        await progress.save();
-      }
-
-      const token = signToken(demoUser);
-      return res.json({
-        message: 'Logged in as Demo Student',
-        token,
-        user: {
-          _id: demoUser._id,
-          name: demoUser.name,
-          email: demoUser.email,
-          classLevel: demoUser.classLevel,
-          schoolName: demoUser.schoolName,
-          parentName: demoUser.parentName,
-          parentEmail: demoUser.parentEmail,
-          preferredLanguage: demoUser.preferredLanguage,
-          role: demoUser.role,
-        },
-      });
+    // Demo student account has been disabled
+    if (email.toLowerCase().trim() === 'demo.student@vidyora.ai') {
+      return res.status(401).json({ message: 'This demo account is disabled. Please sign in with your registered student account or register.' });
     }
 
     const user = await User.findOne({ email: email.toLowerCase().trim() });

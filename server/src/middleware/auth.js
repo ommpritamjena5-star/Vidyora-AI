@@ -20,21 +20,6 @@ const requireAuth = async (req, res, next) => {
 
     const user = await User.findById(decoded.id).select('-password');
     if (!user) {
-      // In demo mode if user was registered in session or memory
-      if (decoded.email === 'demo.student@vidyora.ai') {
-        req.user = {
-          _id: decoded.id,
-          name: decoded.name || 'Omm Pritam (Demo Student)',
-          email: 'demo.student@vidyora.ai',
-          classLevel: 'Class 8',
-          schoolName: 'Govt. High School, Balasore',
-          parentName: 'Ramesh Jena',
-          parentEmail: 'ramesh.jena.parent@example.com',
-          preferredLanguage: 'or',
-          role: 'student'
-        };
-        return next();
-      }
       return res.status(401).json({ message: 'User not found.' });
     }
 
