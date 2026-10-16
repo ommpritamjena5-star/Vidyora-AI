@@ -1,9 +1,7 @@
 # Vidyora AI — An Agentic AI-Powered Personalized Learning Platform
 
 > **"Learn in Your Language. Learn at Your Pace."**  
-> **🌐 Live Website:** [Vidyora AI — Agentic AI Personalized Learning Platform | NEXTECH 2.0](https://vidyora-ai.vercel.app/)  
-> **Hackathon:** NEXTECH 2.0 | NMIET | NIRMIT 2026  
-> **Team Name:** AgniX  
+> **🌐 Live Website:** [Vidyora AI — Agentic AI Personalized Learning Platform](https://vidyora-ai.vercel.app/)  
 > **Team Members:**  
 > 1. Omm Pritam Jena (Team Lead)  
 > 2. Sarbajit Sahoo  
@@ -16,7 +14,7 @@
 ## 1. Project Overview & Identity
 **Vidyora AI** is India’s first agentic AI-powered, bilingual (Odia + English), offline-first personalized education platform built specifically for school students in rural and semi-urban communities. It bridges critical language barriers, provides round-the-clock academic tutoring, detects micro-topic weaknesses through deterministic server scoring, and enables continuous learning even with zero internet connectivity.
 
-- **🌐 Live Production Deployment:** [Vidyora AI — Agentic AI Personalized Learning Platform | NEXTECH 2.0](https://vidyora-ai.vercel.app/)
+- **🌐 Live Production Deployment:** [Vidyora AI — Agentic AI Personalized Learning Platform](https://vidyora-ai.vercel.app/)
 
 ---
 
@@ -110,7 +108,7 @@ vidyora-ai/
 │   │   ├── contexts/                 # AuthContext (offline sync), LanguageContext (Odia/En)
 │   │   ├── i18n/                     # en.json, or.json (Authentic Unicode Odia translations)
 │   │   ├── pages/
-│   │   │   ├── LandingPage.jsx       # 3D Hero, preview, features, how it works, AgniX
+│   │   │   ├── LandingPage.jsx       # 3D Hero, preview, features, how it works
 │   │   │   ├── LoginPage.jsx         # Sign in with One-Click Demo Student fill
 │   │   │   ├── RegisterPage.jsx      # Student registration (grade, school, parent details)
 │   │   │   ├── DashboardPage.jsx     # Global search, streak, weak topics, subjects, tasks
@@ -178,7 +176,7 @@ vidyora-ai/
    PORT=5000
    NODE_ENV=development
    MONGODB_URI=mongodb://127.0.0.1:27017/vidyora_ai
-   JWT_SECRET=vidyora_hackathon_nextech_secret_key_2026
+   JWT_SECRET=vidyora_secret_key_2026
    CLIENT_URL=http://localhost:5173
    GEMINI_API_KEY=your_gemini_api_key_here  # Optional: platform includes offline regional engine
    ```
@@ -216,7 +214,7 @@ vidyora-ai/
 ---
 
 ## 10. Demo Student Credentials
-For instant demonstration during hackathon judging, use the preloaded account or click **"One-Click Login"** on `/login`:
+For instant demonstration, use the preloaded account or click **"One-Click Login"** on `/login`:
 - **Email:** `demo.student@vidyora.ai`
 - **Password:** `vidyora123`
 - **Class:** Class 8 (ଅଷ୍ଟମ ଶ୍ରେଣୀ)
@@ -238,4 +236,4 @@ The following flows were verified and tested in the live environment:
 ---
 
 ## 12. License & Acknowledgements
-Built with precision by **Team AgniX** for **NEXTECH 2.0 | NMIET | NIRMIT 2026**.
+Built with precision for rural and semi-urban student empowerment.

@@ -52,8 +52,7 @@ app.get('/api/health', (req, res) => {
   res.json({
     status: 'ok',
     app: 'Vidyora AI Backend API',
-    hackathon: 'NEXTECH 2.0 | NMIET | NIRMIT 2026',
-    team: 'AgniX',
+    version: '1.0.0',
     timestamp: new Date().toISOString(),
   });
 });

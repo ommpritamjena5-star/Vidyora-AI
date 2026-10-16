@@ -1002,7 +1002,7 @@ export const exportOfflineZipArchive = async ({ classLevel = 'all' } = {}) => {
       'README_OFFLINE_GUIDE.txt',
       `========================================================================
 VIDYORA AI — OFFLINE LEARNING ARCHIVE
-(Agentic AI Personalized Learning Platform | NEXTECH 2.0)
+(Agentic AI Personalized Learning Platform)
 ========================================================================
 
 Dear Student,

@@ -1,7 +1,7 @@
 {
   "name": "vidyora-ai",
   "version": "1.0.0",
-  "description": "Vidyora AI — An Agentic AI-Powered Personalized Learning Platform (NEXTECH 2.0)",
+  "description": "Vidyora AI — An Agentic AI-Powered Personalized Learning Platform",
   "scripts": {
     "start": "node server/src/server.js",
     "postinstall": "npm --prefix client install && npm --prefix server install",

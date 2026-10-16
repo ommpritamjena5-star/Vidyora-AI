@@ -16,7 +16,6 @@ const startServer = async () => {
       console.log(`======================================================`);
       console.log(`🚀 Vidyora AI Backend running at http://localhost:${PORT}`);
       console.log(`🌐 Health Check: http://localhost:${PORT}/api/health`);
-      console.log(`🏆 NEXTECH 2.0 | Team AgniX`);
       console.log(`======================================================`);
     });
   } catch (error) {

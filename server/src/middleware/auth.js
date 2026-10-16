@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'vidyora_hackathon_nextech_secret_key_2026';
+const JWT_SECRET = process.env.JWT_SECRET || 'vidyora_secret_key_2026';
 
 const requireAuth = async (req, res, next) => {
   try {

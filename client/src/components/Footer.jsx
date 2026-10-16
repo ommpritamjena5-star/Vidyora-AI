@@ -41,14 +41,6 @@ export default function Footer() {
                 ? 'ଓଡ଼ିଶାର ଗ୍ରାମାଞ୍ଚଳ ଓ ସହରତଳି ଛାତ୍ରଛାତ୍ରୀଙ୍କ ପାଇଁ ପ୍ରଥମ ଏଜେଣ୍ଟିକ୍ ଏଆଇ ଶିକ୍ଷା ସାଥୀ । ଓଡ଼ିଆ ଓ ଇଂରାଜୀ ଭାଷାରେ ସରଳ ବୁଝାମଣା, ଅନୁକୂଳ ପରୀକ୍ଷା ଏବଂ ୧୦୦% ଅଫଲାଇନ୍ ପାଠପଢା ସୁବିଧା ।'
                 : 'India’s pioneer agentic AI personalized learning platform built to bridge rural educational divides. Features bilingual Odia & English tutoring, smart adaptive testing, and offline-first IndexedDB architecture.'}
             </p>
-            <div className="flex items-center gap-2 pt-2">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-brand-teal/10 text-brand-teal border border-brand-teal/20">
-                NEXTECH 2.0 | NMIET 2026
-              </span>
-              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-brand-orange/10 text-brand-orange border border-brand-orange/20">
-                State Board Curriculum
-              </span>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -106,7 +98,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© 2026 Vidyora AI. Built with precision for NEXTECH 2.0 Hackathon.</p>
+          <p>© 2026 Vidyora AI. All rights reserved.</p>
           <p className="flex items-center gap-1">
             "Learn in Your Language. Learn at Your Pace."
           </p>

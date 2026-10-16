@@ -275,9 +275,6 @@ export default function Navbar() {
                     <span className="font-black text-base sm:text-xl tracking-tight text-brand-navy group-hover:text-brand-teal transition-colors leading-none">
                       Vidyora<span className="text-brand-teal">.ai</span>
                     </span>
-                    <span className="hidden xs:inline-block text-[8px] uppercase font-black tracking-wider px-1 py-0.2 rounded bg-brand-orange/15 text-brand-orange border border-brand-orange/30">
-                      NEXTECH 2.0
-                    </span>
                   </div>
                   <p className="text-[9px] sm:text-[10px] font-bold text-slate-500 mt-0.5 leading-none">
                     {lang === 'or' ? 'ଓଡ଼ିଆ ଏଆଇ ଶିକ୍ଷଣ' : 'Agentic AI Platform'}
