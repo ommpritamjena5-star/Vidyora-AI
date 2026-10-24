@@ -40,8 +40,6 @@ export default function LandingPage() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-md border border-slate-200/80 shadow-xs text-xs font-bold text-brand-navy">
               <span className="w-2 h-2 rounded-full bg-brand-teal animate-ping" />
               <span>{t('landing.badge')}</span>
-              <span className="text-slate-300">•</span>
-              <span className="text-brand-orange">Odisha Education Initiative</span>
             </div>
 
             {/* Headline */}
@@ -505,7 +503,7 @@ export default function LandingPage() {
         <div className="max-w-3xl mx-auto p-8 sm:p-12 rounded-3xl bg-gradient-to-tr from-brand-navy via-brand-navyLight to-slate-900 text-white shadow-2xl border border-brand-teal/30 space-y-6">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-teal/20 text-brand-teal text-xs font-bold">
             <Sparkles className="w-4 h-4" />
-            <span>Designed for Multilingual Education</span>
+            <span>Personalized Multilingual Education</span>
           </div>
           <h3 className="text-3xl sm:text-4xl font-black">
             Ready to experience Agentic AI in your native language?

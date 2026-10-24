@@ -16,7 +16,6 @@ const startServer = async () => {
       console.log(`======================================================`);
       console.log(`🚀 Vidyora AI Backend running at http://localhost:${PORT}`);
       console.log(`🌐 Health Check: http://localhost:${PORT}/api/health`);
-      console.log(`⭐ Vidyora AI Edition`);
       console.log(`======================================================`);
     });
   } catch (error) {
