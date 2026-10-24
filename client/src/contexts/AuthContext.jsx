@@ -155,6 +155,12 @@ export const AuthProvider = ({ children }) => {
   }, [token]);
 
   const login = async (email, password) => {
+    if (email?.trim().toLowerCase() === 'demo.student@vidyora.ai') {
+      return {
+        success: false,
+        message: 'This demo account is disabled. Please sign in with your registered student account or register.'
+      };
+    }
     try {
       const res = await authAPI.login({ email, password });
       const { token: newToken, user: userData } = res.data;
@@ -200,10 +206,6 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  const quickDemoLogin = async () => {
-    const res = await login('demo.student@vidyora.ai', 'vidyora123');
-    return res;
-  };
 
   const setAuthSession = (newToken, userData) => {
     localStorage.setItem('vidyora_token', newToken);
@@ -233,7 +235,6 @@ export const AuthProvider = ({ children }) => {
         syncStatus,
         login,
         register,
-        quickDemoLogin,
         logout,
         setAuthSession,
         checkPendingSync,
