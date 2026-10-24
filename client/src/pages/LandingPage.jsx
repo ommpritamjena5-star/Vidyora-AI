@@ -509,14 +509,14 @@ export default function LandingPage() {
             Ready to experience Agentic AI in your native language?
           </h3>
           <p className="text-slate-300 text-sm max-w-xl mx-auto">
-            Try the demo student account with preloaded subjects, quizzes, and offline vaults.
+            Sign in to start learning with personalized lessons, interactive quizzes, and offline vaults.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
             <Link
               to="/login"
               className="px-8 py-3.5 rounded-2xl bg-brand-teal text-brand-navy font-extrabold text-sm hover:bg-brand-tealLight shadow-lg transition-transform hover:scale-105"
             >
-              One-Click Demo Login ➔
+              Sign In to Vidyora ➔
             </Link>
             <Link
               to="/register"
